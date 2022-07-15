@@ -1,0 +1,217 @@
+.slide{
+    padding: 20px;
+}
+
+.slideTitle{
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.slideContainer{
+    display: flex;
+    padding: 20px 0;
+}
+
+
+.slideShow{
+    flex: 1;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75);
+}
+
+.slideUpdate{
+    flex: 2;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75);
+    margin-left: 20px;
+}
+
+
+.slideShowTop{
+    display: flex;
+    align-items: center;
+}
+
+.slideShowImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.slideShowTopTitle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.slideShowslidename{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.slideShowTitle{
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #9b9c9c;
+}
+
+.slideShowBottom{
+    margin-top: 20px;
+}
+
+.slideShowInfo{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #444;
+}
+
+.slideShowIcon{
+    font-size: 2rem !important;
+}
+
+.slideShowInfoTitle{
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.slideUpdateTitle{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.slideUpdateForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 80%;
+}
+
+.slideUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.slideUpdateItem > label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.slideUpdateInput, .slideUpdateTextarea{
+    border: none;
+    border-bottom: 2px solid gray;
+    height: 30px;
+    transition: all .5s ease;
+}
+
+.slideUpdateInput{
+    width: 250px;
+}
+
+.slideUpdateTextarea{
+    resize: vertical;
+    height: 100px;    
+}
+
+
+.slideUpdateInput:focus{
+    outline: none;
+    border-bottom: 2px solid #b8a398;
+}
+
+.slideUpdateRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slideUpdateUpload{
+    display: flex;
+    align-items: center;
+}
+
+.slideUpdateImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.slideUpdateIcon{
+    font-size: 1.5rem !important;
+    cursor: pointer;
+}
+
+.slideUpdateButton{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #acbfa3;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.slideUpdateButton:hover{
+    background-color: #b8a398;
+}
+
+@media only screen and (max-width: 64em){
+    .slideContainer{
+        display: block;
+    }
+
+    .slideShow{
+        margin-bottom: 20px;
+    }
+
+    .slideShowTitle{
+        font-size: 2rem;
+    }
+
+    .slideShowTopTitle .slideShowTitle{
+        font-size: 1.3rem;
+    }
+
+    .slideUpdate{
+        margin-left: 0px;
+    }
+
+    .slideUpdateForm{
+        display: block;
+    }
+
+    .slideUpdateLeft{
+        margin-bottom: 50px;
+    }
+
+    .slideUpdateRight{
+        display: block;
+    }
+
+    .slideUpdateButton{
+        margin-top: 20px;
+        padding: 2rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 37.5em){
+    .slideUpdateIcon{
+        font-size: 2.5rem !important;
+    }
+
+    .slideUpdateInput{
+        width: 100%
+    }
+
+    .slideUpdateUpload{
+        justify-content: space-between;
+    }
+}

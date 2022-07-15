@@ -1,0 +1,33 @@
+.galleryTab{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.galleryTabBtn{
+    flex: 0 0 20%;
+    padding: 1.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #f2eeec;
+    color: #7e8485;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+    border-radius: 10px;
+}
+
+.galleryTabBtn:not(:last-child){
+    margin-right: 20px;
+}
+
+.galleryTabBtn.active{
+    background-color: #4b5354;
+    color: #fff;
+}
+
+.galleryTabBtn:hover{
+    color: #fff;
+    background-color: #acbfa3;
+}

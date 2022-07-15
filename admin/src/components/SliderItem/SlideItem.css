@@ -1,0 +1,89 @@
+.slideContent{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75);
+    margin: 20px 0;
+}
+
+.slideImg{
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.slideInfo{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideTitle{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.slideDescription{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.actionButtons{
+    text-align: end;
+    margin-top: auto;
+}
+
+.slideIcon{
+    font-size: 2rem !important;
+    cursor: pointer;
+    transition: all .3s ease-in !important;
+}
+
+.slideIcon.editIcon:hover{
+    color: rgba(216, 216, 0, 0.8);
+}
+
+.slideIcon.deleteIcon:hover{
+    color: rgba(255, 0, 0, 0.8);
+}
+
+
+.slideIcon:not(:last-child){
+    margin-right: 10px;
+}
+
+.slideLink{
+    text-decoration: none;
+    color: initial;
+}
+
+@media only screen and (max-width: 37.5em){
+    .slideImg{
+        width: 100px;
+        height: 150px;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    .slideContent{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 25em){
+    .slideImg{
+        height: 100px;
+    }
+
+    .slideTitle{
+        font-size: 1.5rem;
+    }
+
+    .slideDescription{
+        font-size: 1.5rem;
+    }
+
+}

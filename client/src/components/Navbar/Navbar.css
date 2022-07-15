@@ -1,0 +1,53 @@
+.navbar-item{
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.navbar-item.active{
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-item:hover{
+    color:rgba(255, 255, 255, 1);
+}
+
+.cartBadge{
+    font-size: 1.5rem !important;
+}
+
+.navIcon{
+    cursor: pointer;
+}
+
+.verifiedIcon{
+    font-size: 2.5rem !important;
+}
+
+.menuBtn{
+    width: 100%;
+    color: #7e8485 !important;
+    font-size: 1rem !important;
+    justify-content: flex-start !important;
+}
+
+.menuBtn:hover{
+    color: #acbfa3;
+}
+
+ul.MuiMenu-list{
+    width: 150px;
+}
+
+.react-datepicker__input-container input, .PhoneInputInput{
+    padding: 1.5rem 0rem 1rem 1rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #7E8485;
+}
+
+.react-datepicker__input-container input:focus, .PhoneInputInput:focus{
+    border-bottom: 2px solid #000;
+    outline: none;
+}

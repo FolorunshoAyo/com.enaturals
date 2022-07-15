@@ -1,0 +1,196 @@
+.gallery{
+    padding: 20px 0px;
+    position: relative;
+}
+
+.galleryVideos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 200px;
+}
+
+.galleryVideos.empty{
+    display: block;
+}
+
+.emptyVideosMsgContainer{
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyVideosMsg{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.addVideoContainer{
+    position: fixed;
+    bottom: -240px;
+    width: 80%;
+    right: 0px;
+    background-color: #acbfa3;
+    border-radius: 50% 50% 0 0;
+    transition: all .5s ease-in;
+}
+
+.addVideoContainer.opened{
+    bottom: 66px;
+    border-radius: 100px 100px 0 0;
+}
+
+.addVideoButton{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: translateY(-30px);
+    border: none;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,.4);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.addVideoButton:hover{
+    transform: translateY(-40px);
+}
+
+
+.addVideoIcon{
+    font-size: 50px !important;
+}
+
+.addVideoFormContainer{
+    background-color: #fff;
+    height: 100%;
+    padding: 20px 30px;
+}
+
+.addVideoFormTitle{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.addVideoForm{
+    padding: 10px 0;
+}
+
+.addVideoFormBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addVideoFormGroup{
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addVideoFormGroup > label{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.addVideoFormGroup > input{
+    padding: 1rem;
+    font: 2rem;
+}
+
+.addVideoFormGroup > input:focus,
+input[type="file"]:focus, 
+.addVideoSelect:focus{
+    outline: none;
+    border: 1px solid #acbfa3;
+}
+
+input[type="file"]{
+    border: 1px solid #000;
+}
+
+.addVideoSelect{
+    padding: 12px 5px;
+}
+
+.videoFormUploadButton{
+    display: block;
+    width: 14rem;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #acbfa3;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    margin: 20px auto 0px auto;
+}
+
+.videoFormUploadButton:hover{
+    background-color: #b8afa3;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 112.5em){
+    .addVideoContainer.opened{
+        bottom: 0px;
+    }  
+
+    .addVideoContainer{
+        bottom: -265px;
+    }
+}
+
+@media only screen and (max-width: 112.5em){
+    .addVideoContainer{
+        bottom: -220px;
+    }
+}
+
+
+
+@media only screen and (max-width: 64em) {
+    .addVideoContainer{
+        width: 75%;
+        bottom: -300px;
+    }
+
+    .galleryVideos{
+        display: block;
+    }
+
+    .addVideoFormBox{
+        display: block;
+    }
+
+    .addVideoFormGroup:not(:last-child){
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 53.75em){
+    .addVideoContainer{
+        width: 100%;
+        border-radius: 30% 30% 0 0;
+        bottom: -290px;
+    }
+}
+
+
+@media only screen and (max-width: 37.5em){
+    .addVideoContainer{
+        bottom: -290px;
+    }
+}

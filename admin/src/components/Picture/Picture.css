@@ -1,0 +1,95 @@
+.galleryPhoto{
+    flex: 0 0 24%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.galleryPhotoContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.closeBtn{
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: transform .5s ease-out;
+    display: none;
+}
+
+.closeBtn:hover{
+    transform: translateY(-4px);
+}
+
+.galleryPhoto:hover .closeBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeBtnIcon{
+    font-size: 20px !important;
+    color: #fff;
+}
+
+.galleryPhotoImg{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.captionContainer{
+    padding: 10px;
+    font-size: 14px;
+    background-color: #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.captionText, .imageTag{
+    font-weight: 300;
+    color: #fff;
+}
+
+.captionText > span, .imageTag > span{
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 53.75em){
+    .galleryPhoto{
+        flex: 0 0 30%;
+    }
+}
+
+@media only screen and (max-width: 43.75em){
+    .galleryPhoto{
+        flex: 0 0 32%;
+    }
+}
+@media only screen and (max-width: 37.5em){
+    .galleryPhoto{
+        flex: 0 0 48%
+    }
+}
+
+@media only screen and (max-width: 30em){
+    .galleryPhoto{
+        flex: 1;
+        margin-bottom: 50px;
+        height: auto;
+    }
+}

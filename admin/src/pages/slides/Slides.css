@@ -1,0 +1,204 @@
+.slider{
+    padding: 20px;
+}
+
+.sliderContentInfo{
+    margin-bottom: 100px;
+}
+
+.emptySlidesMsgContainer{
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptySlideMsg{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.emptySlideCaption{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.addSliderContainer{
+    position: fixed;
+    bottom: -240px;
+    width: 80%;
+    right: 0px;
+    background-color: #acbfa3;
+    border-radius: 50% 50% 0 0;
+    transition: all .5s ease-in;
+}
+
+.addSliderContainer.opened{
+    bottom: 0px;
+    border-radius: 100px 100px 0 0;
+}
+
+.addSliderButton{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: translateY(-30px);
+    border: none;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,.4);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.addSliderButton:hover{
+    transform: translateY(-40px);
+}
+
+
+.addSliderIcon{
+    font-size: 50px !important;
+}
+
+.addSliderFormContainer{
+    background-color: #fff;
+    height: 100%;
+    padding: 20px 30px;
+}
+
+.addSliderFormTitle{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.addSliderForm{
+    padding: 10px 0;
+}
+
+.addSliderFormBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addSliderFormGroup{
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addSliderFormGroup > label{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.addSliderFormGroup > input{
+    padding: 1rem;
+    font: 2rem;
+}
+
+.addSliderFormGroup > input:focus,
+input[type="file"]:focus, 
+.addSliderSelect:focus{
+    outline: none;
+    border: 1px solid #acbfa3;
+}
+
+input[type="file"]{
+    border: 1px solid #000;
+}
+
+.addSliderSelect{
+    padding: 12px 5px;
+}
+
+.sliderFormUploadButton{
+    display: block;
+    width: 14rem;
+    height: 45px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #acbfa3;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin: 20px auto 0px auto;
+}
+
+.sliderFormUploadButton:hover{
+    background-color: #b8afa3;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 112.5em){
+    .addSliderContainer.opened{
+        bottom: 0px;
+    }  
+
+    .addSliderContainer{
+        bottom: -250px;
+    }
+}
+
+@media only screen and (max-width: 75em){
+    .addSliderContainer{
+        bottom: -250px;
+    }
+} 
+
+@media only screen and (max-width: 64em){
+    .addSliderContainer{
+        width: 75%;
+    }
+
+    .addSliderContainer{
+        bottom: -420px;
+    }
+
+    .addSliderContainer.opened{
+        bottom: 0px;
+    }
+
+    .addSliderFormBox{
+        display: block;
+    }
+
+    .addSliderFormGroup:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 53.75em){
+    .addSliderContainer{
+        width: 100%;
+        border-radius: 30% 30% 0 0;
+        bottom: -400px;
+    }
+}
+
+@media only screen and (max-width: 25em){
+    .sliderContentInfo{
+        margin-bottom: 50px;
+    }
+
+    .addSliderButton{
+        width: 65px;
+        height: 65px;
+    }
+
+    .addSliderContainer{
+        bottom: -380px;
+    }
+
+    .addSliderContainer.opened{
+        bottom: 0px;
+    }
+}
+

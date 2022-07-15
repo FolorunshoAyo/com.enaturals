@@ -1,0 +1,80 @@
+.emptyBlogsMsgContainer{
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyBlogsMsg{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.emptyBlogCaption{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.paginationContainer{
+   display: flex;
+   justify-content: center;
+   padding: 2rem 0;
+}
+
+.paginationIcon{
+    font-size: 1.5rem !important;
+}
+
+.paginationContainer > ul{
+    width: 55%;
+    font-size: 1.5rem;
+    list-style-type: none;
+    display: flex;  
+    justify-content: space-between;
+}
+
+
+.paginationContainer > ul > li { 
+    border-color: #acbfa3;
+    cursor: pointer;
+    height: 100%;
+}
+
+.paginationContainer > ul > li.active { 
+    background-color: #acb4a3;
+    color: #fff;
+}
+
+/* .paginationContainer > ul > li.disabled{
+    display: none;
+} */
+
+.paginationContainer > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.previous, .next{
+    background-color: transparent !important;
+}
+
+.previous > a, .next > a{
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 43.75em){
+    .paginationContainer > ul{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    .paginationContainer > ul{
+        width: 90%;
+    }
+}

@@ -1,0 +1,200 @@
+.review{
+    border-bottom: 1px solid #555;
+    padding: 20px 10px;
+    display: flex;
+    height: 200px;
+}
+
+.avatarImgContainer{
+    flex: 0 0 20%;
+    height: 150px;
+    margin-right: 15px;
+}
+
+.avatarImg{
+    width: 100%;
+    height: 100%;
+}
+
+.reviewDetails{
+    flex: 0 0 55%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.reviewersName{
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.reviewDate{
+    color: lightgray;
+    font-size: 1rem;
+}
+
+.reviewStatus{
+    color: lightgray;
+    font-size: 1.2rem;
+}
+
+.reviewersName, .reviewDate, .reviewStatus{
+    margin-bottom: 5px;
+}
+
+.reviewStatus.published{
+    color: rgb(6, 197, 6) ;
+}
+
+.reviewStatus.pending{
+    color: rgba(197, 197, 0, 0.8);
+}
+
+.reviewStatus.declined{
+    color: rgba(175, 0, 0, 0.8);
+}
+
+.reviewComment{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+.reviewActions{
+    margin-top: 20px;
+}
+
+.reviewActionFormGroup{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.reviewActionFormGroup > button:not(:last-child){
+    margin-right: 10px;
+}
+
+.reviewActionBtn{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #acbfa3;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+
+.reviewActionBtn.show{
+    display: inline-block;
+    animation: slide-out .5s ease-in-out;
+}
+
+
+.reviewActionBtn:hover{
+    background-color: #b8a398;
+}
+
+.ratingContainer{
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.commentedProduct{
+    height: 70%;
+    padding: 0px 5px;
+}
+
+.commentedProduct img{
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 112.5em){
+    .reviewersName{
+        font-size: 1.2rem;
+    }
+    .reviewDate{
+        font-size: 0.8rem;
+    }
+    .reviewStatus{
+        font-size: 1rem;
+    }
+    .reviewComment{
+        font-size: 1rem;   
+    }
+    .reviewActionBtn{
+        padding: 0.5rem 1.5rem;
+    }
+} 
+
+@media only screen and (max-width: 75em){
+    .reviewDetails{
+        flex: 0 0 45%
+    }  
+
+    .ratingContainer{
+        flex: 0 0 35%;
+    }
+
+    .reviewersName{
+        font-size: 1.5rem;
+    }
+
+    .reviewDate{
+        font-size: 1rem;
+    }
+
+    .reviewStatus{
+        font-size: 1.2rem;
+    }
+
+    .reviewComment{
+        font-size: 1.5rem;   
+    }
+
+    .reviewActionBtn{
+        padding: 1rem 2rem;
+    }
+} 
+
+@media only screen and (max-width: 37.5em){
+    .avatarImgContainer{
+        display: none;
+    }
+
+    .reviewDetails{
+        flex: 0 0 65%;
+    } 
+
+    .ratingContainer{
+        flex: 1;
+    }
+
+    .commentedProduct img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    .reviewDetails{
+        flex: 0 0 62%;
+    }
+
+    .ratingContainer{
+        flex: 0 0 38%;
+    }
+}
+
+@media only screen and (max-width: 25em){
+    .reviewDetails{
+        flex: 0 0 60%;
+    }
+
+    .ratingContainer{
+        flex: 0 0 40%;
+    }
+}

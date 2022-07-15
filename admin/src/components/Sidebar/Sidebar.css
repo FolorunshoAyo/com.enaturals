@@ -1,0 +1,164 @@
+.sidebar{
+    flex: 0 0 20%;
+    height: 100vh;
+    background-color: rgb(207, 204, 204);
+    color: white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    overflow-y: scroll;
+}
+
+.sidebar.mobileSidebar{
+    display: none;
+}
+
+.brand-logo{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    height: 10%;
+}
+
+
+.brandImgContainer{
+    flex: 0 0 70%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.brandImg{
+    height: 100%;
+    width: 100%;
+}
+
+.sidebarWrapper{
+    padding: 20px 10px;
+}
+
+.sidebarMenu{
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.sidebarTitle{
+    font-size: 15px;
+    color: #f2eeec;
+    margin: 10px 0;
+}
+
+.sidebarList{
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.sidebarlistItem{
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.sidebarlistItem.active, .sidebarlistItem:hover{
+    background-color: #9aaf8f;
+}
+
+.sidebarIcon{
+    margin-right: 5px;
+    font-size: 2rem !important;
+}
+
+.modalBackdrop{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 600;
+    background-color: rgba(0,0,0,.4);
+    transition: all .4s ease-in;
+}
+
+.modalBackdrop.opened,
+.menuIconContainer.reveal
+{
+    display: block;
+}
+
+.modalBackdrop.closed,
+.menuIconContainer.hide
+{
+    display: none;
+}
+
+.menuIconContainer{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 410;
+}
+
+.menuIcon{
+    font-size: 3rem !important;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 75em){
+    .sidebarlistItem{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 64em){
+    .sidebar{
+        flex: 0 0 25%;
+    }
+}
+
+@media only screen and (max-width: 53.75em){
+    .sidebar{
+        display: none;
+    }
+
+    .sidebar.mobileSidebar{
+        display: block;
+        height: 100%;
+        width: 30%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 800;
+        transform: translateX(-100%);
+        transition: all .4s ease-in;
+    }
+}
+
+@media only screen and (max-width: 43.75em){
+    .sidebar.mobileSidebar{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    .sidebar.mobileSidebar{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 25em){
+    .sidebar.mobileSidebar{
+        width: 60%;
+    }
+}
+
+.sidebar.mobileSidebar.opened{
+    transform: translateX(0%);
+}
+
+.sidebar.mobileSidebar.closed{
+    transform: translateX(-100%);
+}

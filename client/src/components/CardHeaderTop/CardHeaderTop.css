@@ -1,0 +1,29 @@
+.editLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: all .3s; 
+    height: 30px;
+    width: 30px;
+}
+
+
+.editLink:hover{
+    background-color: #acbfa3;
+}
+
+.editLink:hover .editIcon{
+    color: #fff !important;
+}
+
+.editIcon{
+    font-size: 2.5rem;
+    color: #ACBFA3;
+}
+
+.deleteIcon{
+    font-size: 2.5rem;
+}

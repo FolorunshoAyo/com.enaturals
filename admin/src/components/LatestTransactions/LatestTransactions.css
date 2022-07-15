@@ -1,0 +1,110 @@
+.widgetLgUser{
+    display: flex;
+    align-items: center;
+    font-weight: 600;   
+}
+
+.widgetLgImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.widgetLgName{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.widgetLgDate, .widgetLgAmount{
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.widgetLgButton{
+    padding: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.widgetLgStatus.delivered
+{
+    background-color: rgb(86, 0, 191);
+}
+
+.widgetLgStatus.confirmed{
+    background-color: rgb(6, 197, 6); 
+}
+.widgetLgStatus.pending{
+    background-color: rgba(197, 197, 0, 0.8);
+}
+
+.widgetLgStatus.delivering{
+    background-color: rgba(15, 86, 207, 0.8);
+}
+
+@media only screen and (max-width: 75em){
+    .widgetLgTitle{
+        font-size: 2.5rem;
+    }
+
+    .widgetLgName{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 46.875em){
+    .widgetLgImg{
+        width: 35px;
+        height: 35px;
+    }
+
+    .widgetLgName{
+        font-size: 1.8rem;
+    }
+
+    .widgetLgDate, 
+    .widgetLgAmount{
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    .widgetLgTable{
+        border-spacing: 10px;
+    }
+
+    .widgetLgImg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .widgetLgName{
+        font-size: 1.6rem;
+    }
+
+    .widgetLgDate, 
+    .widgetLgAmount{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media only screen and (max-width: 25em){
+    .widgetLgImg{
+        width: 20px;
+        height: 20px;
+    }
+
+    .widgetLgName{
+        font-size: 1.5em;
+    }
+
+    .widgetLgDate, 
+    .widgetLgAmount{
+        font-size: 1.2rem;
+    }
+}

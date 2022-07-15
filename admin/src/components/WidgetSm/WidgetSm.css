@@ -1,0 +1,133 @@
+.widgetSm{
+    flex: 1;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.widgetSmTitle{
+    display: block;
+    font-size: 2rem;  /* initially 2.5rem */
+    font-weight: 600;
+}
+
+.widgetSmImage{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.widgetSmList{
+    list-style-type: none;
+    padding: 1rem 0; /* initially 2rem */
+}
+
+.widgetSmListItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;   /* Initiially 2rem */
+}
+
+.widgetSmUser{
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetSmUsername{
+    font-weight: 600;
+}
+
+.widgetSmUserTitle{
+    font-weight: 300;
+}
+
+.widgetSmButton{
+    border: none;
+    border-radius: 10px;
+    background-color: #acbfa3;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.widgetSmLink{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 7px 10px;
+}
+
+.widgetSmIcon{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 75em){
+    .widgetSmTitle{
+        font-size: 2.5rem;
+    }
+
+    .widgetSmList{
+        padding: 2rem 0;
+    }
+
+    .widgetSmListItem{
+        height: calc(100%/5);
+        margin: 2rem 0;
+    }
+}
+
+
+@media only screen and (max-width: 46.875em){
+    .widgetSm{
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .widgetSmList{
+        width: 280px;
+    }
+
+    .widgetSmImage{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .widgetSmUsername{
+        font-size: 2rem;
+    }
+
+    .widgetSmUserTitle{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 25em){
+    .widgetSm{
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .widgetSmList{
+        width: 100%;
+    }
+
+    .widgetSmImage{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .widgetSmUsername{
+        font-size: 2rem;
+    }
+
+    .widgetSmUserTitle{
+        font-size: 1.5rem;
+    }
+}
+
