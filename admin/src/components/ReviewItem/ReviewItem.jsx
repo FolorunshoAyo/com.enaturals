@@ -65,10 +65,9 @@ const  ReviewItem = ({ reviewID, fullname, createdAt, status, comment, rating, p
     };
 
     const reviewActions = (status) => {
-        let result = "";
         switch (status){
             case "pending":
-                result = (
+                return (
                     <div className="reviewActionFormGroup">
                         <button className="reviewActionBtn" onClick={() => handleReviewStatus("published")}>Publish</button>
                         <button className="reviewActionBtn" onClick={handleDeleteReview}>Delete</button>
@@ -76,7 +75,7 @@ const  ReviewItem = ({ reviewID, fullname, createdAt, status, comment, rating, p
                 );
             break;
             case "published":
-                result = (
+                return (
                     <div className="reviewActionFormGroup">
                         <button className="reviewActionBtn" onClick={() => handleReviewStatus("pending")}>Unpublish</button>
                         <button className="reviewActionBtn" onClick={handleDeleteReview}>Delete</button>
@@ -84,9 +83,7 @@ const  ReviewItem = ({ reviewID, fullname, createdAt, status, comment, rating, p
                 );
             break;
             default: 
-            console.log("No other actions");  
-            
-            return result;
+            console.log("No other actions");           
         }
     };
 
