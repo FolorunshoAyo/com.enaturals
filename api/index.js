@@ -44,7 +44,14 @@ const addressRoute = require("./routes/address");
     app.use("/api/videos", videosRoute);
     app.use("/api/address", addressRoute);
 
-    
+    app.get("/", () => {
+        // Build index.html file for the admin react app here 
+    });
+
+    app.get("/admin", () => {
+     // Build index.html file for the admin react app here   
+    })
+
     app.listen(process.env.PORT || 5000, () => {
         console.log("Backend server running at port 5000");
     });
