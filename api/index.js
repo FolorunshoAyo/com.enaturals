@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require("mongoose"); 
 const cors = require('cors');
 const dotenv = require("dotenv");
+const path = require("path");
 
 const userRoute = require("./routes/user");
 const authRoute = require("./routes/auth");
@@ -30,6 +31,8 @@ const addressRoute = require("./routes/address");
 
     app.use(express.json());
     app.use(cors());
+    app.use(express.static("client-static"));
+    app.use(express.static("admin-static"));
     app.use("/api/users", userRoute);
     app.use("/api/auth", authRoute);
     app.use("/api/products", productRoute);
@@ -44,15 +47,17 @@ const addressRoute = require("./routes/address");
     app.use("/api/videos", videosRoute);
     app.use("/api/address", addressRoute);
 
-    app.get("/", () => {
-        // Build index.html file for the admin react app here 
+    /* app.get("/admin", (req, res) => {
+     // Build index.html file for the admin react app here
+        res.sendFile(path.join(__dirname, "admin-static/index.html"));   
+    }); */
+
+    app.get("*", (req, res) => {
+        // Build index.html file for the client react app here
+        res.sendFile(path.join(__dirname, "client-static/index.html")); 
     });
 
-    app.get("/admin", () => {
-     // Build index.html file for the admin react app here   
-    })
-
-    app.listen(process.env.PORT || 5000, () => {
+    app.listen(5000, () => {
         console.log("Backend server running at port 5000");
     });
 

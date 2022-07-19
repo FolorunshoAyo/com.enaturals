@@ -1,4 +1,4 @@
-const Slide = require("../models/Slide");
+const Slide = require("../Models/Slide");
 const { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken");
 
 const router = require("express").Router();

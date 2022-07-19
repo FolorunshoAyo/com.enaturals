@@ -1,4 +1,4 @@
-const Testimonial = require("../models/Testimonial");
+const Testimonial = require("../Models/Testimonial");
 const { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken");
 
 const router = require("express").Router();

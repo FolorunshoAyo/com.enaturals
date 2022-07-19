@@ -1,5 +1,5 @@
-const Comment = require("../models/Comment");
-const Reply = require("../models/Reply");
+const Comment = require("../Models/Comment");
+const Reply = require("../Models/Reply");
 const { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken");
 
 const router = require("express").Router();

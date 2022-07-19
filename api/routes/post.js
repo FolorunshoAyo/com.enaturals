@@ -1,6 +1,6 @@
 const BlogPost = require("../Models/BlogPost");
-const Comment = require("../models/Comment");
-const Reply = require("../models/Reply");
+const Comment = require("../Models/Comment");
+const Reply = require("../Models/Reply");
 
 const { 
     verifyToken, 

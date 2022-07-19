@@ -1,4 +1,4 @@
-const Video = require("../models/Video");
+const Video = require("../Models/Video");
 const { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken");
 
 const router = require("express").Router();
