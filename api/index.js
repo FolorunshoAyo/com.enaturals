@@ -32,7 +32,6 @@ const addressRoute = require("./routes/address");
     app.use(express.json());
     app.use(cors());
     app.use(express.static("client-static"));
-    app.use(express.static("admin-static"));
     app.use("/api/users", userRoute);
     app.use("/api/auth", authRoute);
     app.use("/api/products", productRoute);
