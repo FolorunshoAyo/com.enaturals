@@ -136,6 +136,8 @@ const Slider = () => {
         getSlides(dispatch);
     }, [dispatch]);
 
+    console.log(slides);
+    
     return (
         <Container>
             {
